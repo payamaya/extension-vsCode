@@ -30,7 +30,7 @@ Visit: [Node ExpressSnippet on VS Code Marketplace](https://marketplace.visualst
 
 ## 🎥 Demo
 
-![ExpressSnippet Demo](demo.gif)
+![ExpressSnippet Demo](/expresssnippet/demo.gif)
 
 ### Quick Start:
 
