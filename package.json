@@ -23,6 +23,10 @@
     "development",
     "productivity"
   ],
+  "pricing": "Free",
+  "sponsor": {
+    "url": "https://github.com/sponsors/payamaya"
+  },
   "icon": "icon.png",
   "galleryBanner": {
     "color": "#0b3d91",

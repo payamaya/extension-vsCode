@@ -1,5 +1,16 @@
 # Change Log
 
+## [0.0.3] - 2026-01-04
+
+### Added
+
+- Sponsor information for GitHub Sponsors
+- Fixed GIF path in README
+
+### Fixed
+
+- Improved .vscodeignore exclusions
+
 ## [0.0.2] - 2026-01-04
 
 ### Added

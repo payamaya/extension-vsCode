@@ -7,3 +7,7 @@ recording.mp4
 # But exclude other GIFs if any
 *.gif
 !demo.gif
+**/*.test
+**/tsconfig.json
+!file.ts
+!file.ts
