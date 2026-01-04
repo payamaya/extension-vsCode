@@ -1,9 +1,22 @@
 # Change Log
 
-All notable changes to the "expresssnippet" extension will be documented in this file.
+## [0.0.2] - 2026-01-04
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Added
 
-## [Unreleased]
+- Demo GIF showing usage
+- More detailed documentation
+- Badges for marketplace stats
+- Express express-server setup snippet
+- Express GET route snippet
+- Express POST route snippet
+- Express middleware snippet
+- Express error handler snippet
+- Express with MongoDB snippet
 
-- Initial release
+## [0.0.1] - 2026-01-04
+
+### Initial Release
+
+- Basic Express server setup snippet
+- Common Express.js patterns

@@ -1,8 +1,8 @@
 {
-  "name": "expresssnippet",
-  "displayName": "ExpressSnippet",
+  "name": "node-express-snippets",
+  "displayName": "Node ExpressSnippet",
   "description": "Essential Express.js snippets for faster Node.js development. Includes middleware, routing, error handling, and common API patterns to accelerate your Express application development workflow.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "Payamaya",
   "engines": {
     "vscode": "^1.107.0"
@@ -12,19 +12,30 @@
   ],
   "keywords": [
     "express",
-    "node",
     "nodejs",
     "snippets",
     "javascript",
-    "api",
     "backend",
-    "middleware"
+    "api",
+    "middleware",
+    "routes",
+    "server",
+    "development",
+    "productivity"
   ],
   "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#0b3d91",
+    "theme": "dark"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/payamaya/extension-vsCode.git"
+    "url": "https://github.com/yourusername/express-snippets"
   },
+  "bugs": {
+    "url": "https://github.com/yourusername/express-snippets/issues"
+  },
+  "homepage": "https://github.com/yourusername/node-express-snippets#readme",
   "contributes": {
     "snippets": [
       {

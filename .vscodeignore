@@ -1,4 +1,9 @@
-.vscode/**
-.vscode-test/**
+.vscode/
+.vscode-test/
 .gitignore
 vsc-extension-quickstart.md
+recording.mp4
+# DO NOT exclude demo.gif - we need it!
+# But exclude other GIFs if any
+*.gif
+!demo.gif

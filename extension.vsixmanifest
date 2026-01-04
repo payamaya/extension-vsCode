@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="expresssnippet.payamaya" Version="0.0.1" Publisher="payamaya" />
-    <DisplayName>ExpressSnippet</DisplayName>
+    <Identity Language="en-US" Id="node-express-snippet.Payamaya" Version="0.0.1" Publisher="Payamaya" />
+    <DisplayName>Node ExpressSnippet</DisplayName>
     <Description xml:space="preserve">Essential Express.js snippets for faster Node.js development. Includes middleware, routing, error handling, and common API patterns to accelerate your Express application development workflow.</Description>
     <Tags>express, nodejs, snippets, javascript</Tags>
     <Categories>Snippets</Categories>

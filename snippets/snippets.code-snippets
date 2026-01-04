@@ -18,8 +18,89 @@
       "// Start server",
       "app.listen(port, () => {",
       "  console.log(`Server running on port ${port}`);",
-      "});"
+      "});",
     ],
-    "description": "Basic Express server setup"
-  }
+    "description": "Basic Express server setup",
+  },
+
+  "Express GET Route": {
+    "prefix": "exp-get",
+    "body": [
+      "app.get('${1:/api}', (req, res) => {",
+      "  try {",
+      "    ${2:// Your code here}",
+      "    res.status(200).json({ success: true, data: ${3:result} });",
+      "  } catch (error) {",
+      "    console.error('Error:', error);",
+      "    res.status(500).json({ success: false, error: error.message });",
+      "  }",
+      "});",
+    ],
+    "description": "Express GET route with error handling",
+  },
+
+  "Express POST Route": {
+    "prefix": "exp-post",
+    "body": [
+      "app.post('${1:/api}', (req, res) => {",
+      "  try {",
+      "    const data = req.body;",
+      "    ${2:// Your code here}",
+      "    res.status(201).json({ success: true, data: ${3:result} });",
+      "  } catch (error) {",
+      "    console.error('Error:', error);",
+      "    res.status(500).json({ success: false, error: error.message });",
+      "  }",
+      "});",
+    ],
+    "description": "Express POST route with error handling",
+  },
+
+  "Express Middleware": {
+    "prefix": "exp-middleware",
+    "body": [
+      "const ${1:myMiddleware} = (req, res, next) => {",
+      "  ${2:// Your middleware logic}",
+      "  next();",
+      "};",
+    ],
+    "description": "Express middleware function",
+  },
+
+  "Express Error Handler": {
+    "prefix": "exp-error",
+    "body": [
+      "app.use((err, req, res, next) => {",
+      "  console.error(err.stack);",
+      "  res.status(${1:500}).json({",
+      "    success: false,",
+      "    message: 'Something went wrong!',",
+      "    ${2:// Add more error details}",
+      "  });",
+      "});",
+    ],
+    "description": "Express error handling middleware",
+  },
+
+  "Express with MongoDB": {
+    "prefix": "exp-mongodb",
+    "body": [
+      "const mongoose = require('mongoose');",
+      "",
+      "// Connect to MongoDB",
+      "mongoose.connect('mongodb://localhost:27017/${1:dbname}', {",
+      "  useNewUrlParser: true,",
+      "  useUnifiedTopology: true",
+      "});",
+      "",
+      "// MongoDB Schema",
+      "const ${2:ModelName}Schema = new mongoose.Schema({",
+      "  name: String,",
+      "  createdAt: { type: Date, default: Date.now }",
+      "});",
+      "",
+      "const ${2:ModelName} = mongoose.model('${2:ModelName}', ${2:ModelName}Schema);",
+    ],
+    "description": "Express with MongoDB connection and model",
+  },
 }
