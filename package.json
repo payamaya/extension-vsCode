@@ -30,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/express-snippets"
+    "url": "https://github.com/payamaya/extension-vsCode.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/express-snippets/issues"
+    "url": "https://github.com/payamaya/extension-vsCode.git/issues"
   },
-  "homepage": "https://github.com/yourusername/node-express-snippets#readme",
+  "homepage": "https://github.com/payamaya/extension-vsCode.git#readme",
   "contributes": {
     "snippets": [
       {
