@@ -1,65 +1,56 @@
-# expresssnippet README
+# ExpressSnippet for VS Code
 
-This is the README for your extension "expresssnippet". After writing up a brief description, we recommend including the following sections.
+Essential Express.js snippets for faster Node.js development. Includes middleware, routing, error handling, and common API patterns to accelerate your Express application development workflow.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Quick Express server setup** - Get started in seconds
+- **Common route patterns** - GET, POST, PUT, DELETE routes
+- **Middleware templates** - Custom middleware with error handling
+- **Error handling** - Structured error responses
+- **Security** - CORS, Helmet configurations
+- **Best practices** - Follows Express.js conventions
 
-For example if there is an image subfolder under your extension project workspace:
+## Snippets Included
 
-\!\[feature X\]\(images/feature-x.png\)
+| Prefix           | Description                    |
+| ---------------- | ------------------------------ |
+| `express-server` | Complete Express server setup  |
+| `exp-get`        | GET route with error handling  |
+| `exp-post`       | POST route with error handling |
+| `exp-middleware` | Custom middleware function     |
+| `exp-error`      | Error handling middleware      |
+| `exp-params`     | Route with URL parameters      |
+| `exp-static`     | Serve static files             |
+| `exp-cors`       | CORS configuration             |
+| `exp-helmet`     | Security headers with Helmet   |
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
 
-## Requirements
+1. Type the snippet prefix (e.g., `express-server`)
+2. Press `Tab` to expand
+3. Fill in the placeholders using `Tab` to navigate
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Example
 
-## Extension Settings
+Type `express-server` and press `Tab`:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+```javascript
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 3000
 
-For example:
+// Middleware
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
-This extension contributes the following settings:
+// Routes
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+// Start server
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`)
+})
+```

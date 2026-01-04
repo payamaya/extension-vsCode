@@ -1,0 +1,36 @@
+{
+  "name": "expresssnippet",
+  "displayName": "ExpressSnippet",
+  "description": "Essential Express.js snippets for faster Node.js development. Includes middleware, routing, error handling, and common API patterns to accelerate your Express application development workflow.",
+  "version": "0.0.1",
+  "publisher": "Payamaya",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "express",
+    "node",
+    "nodejs",
+    "snippets",
+    "javascript",
+    "api",
+    "backend",
+    "middleware"
+  ],
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/payamaya/extension-vsCode.git"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
