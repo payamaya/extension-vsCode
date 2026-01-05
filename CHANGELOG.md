@@ -1,5 +1,22 @@
 # Change Log
 
+## [0.0.4] - 2026-01-04
+
+### Added
+
+- TypeScript support with dedicated snippets
+- React JSX support for frontend integration
+- React TypeScript support
+- Separate snippet files for each language
+- 10+ new language-specific snippets
+- Enhanced documentation for multi-language support
+
+### Fixed
+
+- Removed all JSON trailing comma errors
+- Improved snippet organization
+- Better language targeting
+
 ## [0.0.3] - 2026-01-04
 
 ### Added
