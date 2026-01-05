@@ -2,7 +2,7 @@
   "name": "node-express-snippets",
   "displayName": "Node ExpressSnippet",
   "description": "Essential Express.js snippets for faster Node.js development. Includes middleware, routing, error handling, and common API patterns to accelerate your Express application development workflow.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "Payamaya",
   "engines": {
     "vscode": "^1.107.0"
